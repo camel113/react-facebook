@@ -64,7 +64,8 @@ export default class Parser extends Component {
     this.parsed = true;
 
     const parseResponse = facebook.parse(container);
-
+    console.log(this.props)
+    console.log("#####################")
     const { onParse } = this.props;
     if (onParse) {
       onParse(parseResponse);
