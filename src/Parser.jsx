@@ -21,7 +21,7 @@ export default class Parser extends Component {
   componentWillReceiveProps(props) {
     const oldChildren = this.props.children;
     const { children } = props;
-
+    console.log("componentWillReceiveProps")
     if (!children || !oldChildren) {
       return;
     }
