@@ -34,6 +34,8 @@ export default class Parser extends Component {
     });
 
     if (changed) {
+      console.log("changed")
+      console.log(children)
       this.rerender();
     }
   }
