@@ -56,6 +56,7 @@ export default class Parser extends Component {
   }
 
   parse() {
+    console.log(this)
     const { parsed, container, facebook } = this;
     if (parsed || !container || !facebook) {
       return false;
